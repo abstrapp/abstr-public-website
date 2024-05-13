@@ -1,1 +1,7 @@
-<p>banner-hero works!</p>
+<div class="bg-gradient-to-br from-purple-800 to-indigo-800 text-white py-24 px-6 text-center">
+  <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4">{{title}}</h1>
+  <p class="text-lg md:text-xl lg:text-2xl mb-8">{{ subtitle }}</p>
+  @if(link) {
+    <a class="bg-blue-500 text-white py-2 px-6 rounded-lg hover:bg-blue-700" [routerLink]="link.href">{{link.text}}</a>
+  }
+</div>

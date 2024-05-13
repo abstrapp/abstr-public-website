@@ -1,11 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
+// import { Link } from '@abstrapp/core';
+
+interface Link {
+  text: string;
+  href: string;
+}
 
 @Component({
-  selector: 'lib-banner-hero',
+  selector: 'abc-banner-hero',
   standalone: true,
-  imports: [CommonModule],
+  imports: [RouterModule, CommonModule],
   templateUrl: './banner-hero.html',
-  styleUrl: './banner-hero.scss',
+  styleUrl: './banner-hero.scss'
 })
-export class BannerHero {}
+export class BannerHeroComponent {
+  @Input() title?: string;
+  @Input() subtitle?: string;
+  @Input() link?: Link;
+}

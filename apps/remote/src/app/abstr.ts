@@ -2,7 +2,7 @@ import { AbstrConfig } from '@abstrapp/core';
 import { JSCM_BannerHeroComponent } from '@abstrapp/components';
 
 export default {
-  clientId: 'client-1',
+  clientId: 'abstrapp',
   appRootPath: 'demo',
   // Component mapping list needed by ComponentMappingService to instantiate a Class component via JSON
   components: {
