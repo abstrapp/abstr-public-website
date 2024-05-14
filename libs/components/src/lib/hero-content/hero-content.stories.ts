@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from '@storybook/angular';
-import { HeroContent } from './hero-content';
+import { AbcHeroContent } from './hero-content';
 
-const meta: Meta<HeroContent> = {
-  component: HeroContent,
+const meta: Meta<AbcHeroContent> = {
+  component: AbcHeroContent,
   title: 'HeroContent',
 };
 export default meta;
-type Story = StoryObj<HeroContent>;
+type Story = StoryObj<AbcHeroContent>;
 
 export const Primary: Story = {
   args: {

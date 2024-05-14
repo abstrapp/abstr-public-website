@@ -5,10 +5,9 @@ import { CommonModule } from '@angular/common';
   selector: 'abc-hero-content',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './hero-content.html',
-  styleUrl: './hero-content.css',
+  templateUrl: './hero-content.html'
 })
-export class HeroContent {
+export class AbcHeroContent {
   @Input() title?: string;
   @Input() text?: string;
   @Input() image?: {src: string, alt: string};

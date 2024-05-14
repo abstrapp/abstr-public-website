@@ -13,10 +13,9 @@ interface Link {
   selector: 'abc-banner-hero',
   standalone: true,
   imports: [RouterModule, CommonModule],
-  templateUrl: './banner-hero.html',
-  styleUrl: './banner-hero.scss'
+  templateUrl: './banner-hero.html'
 })
-export class BannerHeroComponent {
+export class AbcBannerHero {
   @Input() title?: string;
   @Input() subtitle?: string;
   @Input() link?: Link;

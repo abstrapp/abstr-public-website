@@ -1,9 +1,9 @@
 import { Meta, moduleMetadata, StoryObj } from '@storybook/angular';
-import { BannerHeroComponent } from './banner-hero';
+import { AbcBannerHero } from './banner-hero';
 import { RouterTestingModule } from '@angular/router/testing';
 
-const meta: Meta<BannerHeroComponent> = {
-  component: BannerHeroComponent,
+const meta: Meta<AbcBannerHero> = {
+  component: AbcBannerHero,
   title: 'BannerHeroComponent',
   decorators: [
     moduleMetadata({
@@ -14,7 +14,7 @@ const meta: Meta<BannerHeroComponent> = {
 
 export default meta;
 
-type Story = StoryObj<BannerHeroComponent>;
+type Story = StoryObj<AbcBannerHero>;
 
 export const Primary: Story = {
   args: {

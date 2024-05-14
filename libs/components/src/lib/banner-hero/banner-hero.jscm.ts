@@ -1,11 +1,14 @@
-import {JSCMComponent} from '@abstrapp/core';
+import { JSCMComponent } from '@abstrapp/core';
+import { JSCM_GROUP } from '../common';
 
-export const JSCM_BannerHeroComponent: Record<'BannerHeroComponent', JSCMComponent> = {
-  BannerHeroComponent: {
+export const JSCM_BannerHeroComponent: Record<'AbcBannerHero', JSCMComponent> = {
+  AbcBannerHero: {
     instanceLazyCallback: () => import('./banner-hero'),
-    group: 'group_1',
+    group: JSCM_GROUP,
     mapping: [
-      {c: 'AbstrMatInput', key: 'title', p: {label: 'Title'}}
+      { c: 'AbstrMatInput', key: 'title', p: { label: 'Title' } },
+      { c: 'AbstrMatInput', key: 'subtitle', p: { label: 'Subtitle' } },
+      { c: 'AbstrMatLink', key: 'subtitle', p: { label: 'Link' } }
     ]
   }
 };
