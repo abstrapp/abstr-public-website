@@ -8,8 +8,7 @@ export const JSCM_HeroContentComponent: Record<'AbcHeroContent', JSCMComponent> 
     mapping: [
       { c: 'AbstrMatInput', key: 'title', p: { label: 'Title' } },
       { c: 'AbstrMatInput', key: 'text', p: { label: 'Text' } },
-      { c: 'AbstrMatInput', key: 'image.src', p: { label: 'Image src' } },
-      { c: 'AbstrMatInput', key: 'image.alt', p: { label: 'Image alt' } }
+      { c: 'AbstrMatImage', key: 'image', p: { label: 'Image' } },
     ]
   }
 };

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { type MediaObject } from '@abstrapp/core';
 
 @Component({
   selector: 'abc-hero-content',
@@ -10,5 +11,5 @@ import { CommonModule } from '@angular/common';
 export class AbcHeroContent {
   @Input() title?: string;
   @Input() text?: string;
-  @Input() image?: {src: string, alt: string};
+  @Input() image?: MediaObject;
 }
